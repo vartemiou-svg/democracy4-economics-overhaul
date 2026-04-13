@@ -6,7 +6,7 @@ name = SovereignWealthFundProposal
 1 = FiscalBalance,0+(0.5*x)
 2 = SovereignRisk,0.3-(0.5*x)
 3 = GDP,0+(0.3*x)
-4 = BondMarketCrisis,-1.0*(x)
+4 = BondMarketCrisis,0-(1.0*x)
 
 [option0]
 OnImplement = CreateGrudge(_effectivedebt_,0.04,0.95f);CreateGrudge(DebtServiceRatio,0.03,0.94f);CreateGrudge(GDP,0.02,0.93f);CreateGrudge(Capitalist,0.06,0.92f);CreateGrudge(BusinessConfidence,0.03,0.92f);
