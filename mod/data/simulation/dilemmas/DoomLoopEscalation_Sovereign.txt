@@ -1,0 +1,18 @@
+[dilemma]
+name = DoomLoopEscalation_Sovereign
+
+[influences]
+0 = _random_,0,0.06
+1 = BondMarketCrisis,0+(0.8*x)
+2 = DebtServiceRatio,0+(0.5*x)
+3 = SovereignRisk,0+(0.4*x)
+4 = _prereq_eurozone,0-(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(FiscalBalance,0.08,0.94f);CreateGrudge(GDP,-0.06,0.93f);CreateGrudge(Unemployment,0.04,0.93f);CreateGrudge(_All_,-0.10,0.94f);CreateGrudge(SovereignRisk,-0.06,0.93f);CreateGrudge(Socialist,-0.10,0.93f);CreateGrudge(StateEmployees,-0.08,0.92f);
+
+[option1]
+OnImplement = CreateGrudge(LongTermYield,-0.10,0.92f);CreateGrudge(MediumTermYield,-0.08,0.92f);CreateGrudge(MoneySupply,0.12,0.93f);CreateGrudge(Inflation,0.08,0.93f);CreateGrudge(CurrencyStrength,-0.10,0.93f);CreateGrudge(BusinessConfidence,0.04,0.88f);CreateGrudge(GDP,0.03,0.90f);
+
+[option2]
+OnImplement = CreateGrudge(SovereignRisk,-0.08,0.93f);CreateGrudge(MediumTermYield,-0.05,0.91f);CreateGrudge(_All_,-0.05,0.91f);CreateGrudge(GDP,-0.03,0.90f);CreateGrudge(FiscalBalance,0.03,0.91f);CreateGrudge(Patriot,-0.06,0.91f);

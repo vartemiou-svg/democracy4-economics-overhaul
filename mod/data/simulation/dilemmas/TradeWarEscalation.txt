@@ -1,0 +1,13 @@
+[dilemma]
+name=TradeWarEscalation
+
+[influences]
+0 = _default_,0.25+(0*x)
+1 = _random_,0,0.12
+2 = _globaleconomy_,0.3-(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(GDP,-0.03,6);CreateGrudge(Inflation,+0.02,6);CreateGrudge(ForeignInvestment,-0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,+0.02,8);CreateGrudge(GDP,+0.01,8)

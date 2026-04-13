@@ -1,0 +1,14 @@
+[dilemma]
+name=CurrencyCrisis
+
+[influences]
+0 = _default_,0.12+(0*x)
+1 = _random_,0,0.08
+2 = CurrencyStrength,0.5-(1.0*x)
+3 = SovereignRisk,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(ShortTermYield,+0.08,4);CreateGrudge(CurrencyStrength,+0.06,6);CreateGrudge(GDP,-0.05,8);CreateGrudge(Unemployment,+0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(CurrencyStrength,-0.04,6);CreateGrudge(Inflation,+0.05,6);CreateGrudge(GDP,+0.02,12);CreateGrudge(ForeignInvestment,-0.03,8)

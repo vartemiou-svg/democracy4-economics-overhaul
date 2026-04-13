@@ -1,0 +1,11 @@
+[dilemma]
+name=DigitalCurrency
+
+[influences]
+0 = _default_,0.40+(0*x)
+1 = _random_,0,0.15
+
+[option0]
+OnImplement = CreateGrudge(MoneySupply,+0.03,6);CreateGrudge(Corruption,-0.02,12);CreateGrudge(BusinessConfidence,+0.02,8)
+
+[option1]

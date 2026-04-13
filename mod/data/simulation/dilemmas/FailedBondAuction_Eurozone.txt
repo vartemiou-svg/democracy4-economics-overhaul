@@ -1,0 +1,18 @@
+[dilemma]
+name = FailedBondAuction_Eurozone
+
+[influences]
+0 = _random_,0,0.12
+1 = SovereignRisk,0+(0.5*x)
+2 = DebtServiceRatio,0+(0.4*x)
+3 = BusinessConfidence,0.3-(0.4*x)
+4 = _prereq_eurozone,-1.0+(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(MediumTermYield,0.08,0.92f);CreateGrudge(DebtServiceRatio,0.06,0.92f);CreateGrudge(Capitalist,-0.04,0.88f);CreateGrudge(_All_,-0.03,0.88f);
+
+[option1]
+OnImplement = CreateGrudge(MoneySupply,0.04,0.93f);CreateGrudge(Inflation,0.02,0.93f);CreateGrudge(CurrencyStrength,-0.03,0.91f);CreateGrudge(MediumTermYield,-0.03,0.88f);CreateGrudge(SovereignRisk,-0.04,0.92f);CreateGrudge(FiscalBalance,-0.03,0.92f);CreateGrudge(BusinessConfidence,0.02,0.90f);CreateGrudge(Capitalist,-0.03,0.90f);CreateGrudge(_All_,-0.04,0.91f);CreateGrudge(Socialist,-0.03,0.88f);
+
+[option2]
+OnImplement = CreateGrudge(ShortTermYield,0.06,0.90f);CreateGrudge(DebtServiceRatio,0.03,0.90f);CreateGrudge(SovereignRisk,0.04,0.92f);CreateGrudge(BusinessConfidence,-0.03,0.90f);

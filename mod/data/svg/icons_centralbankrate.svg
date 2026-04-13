@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+  </defs>
+  <path fill="#ffffff" d="M 128 25 L 220 85 L 36 85 Z"/>
+  <path fill="#ffffff" d="M 55 90 L 75 90 L 75 195 L 55 195 Z"/>
+  <path fill="#ffffff" d="M 120 90 L 140 90 L 140 195 L 120 195 Z"/>
+  <path fill="#ffffff" d="M 185 90 L 205 90 L 205 195 L 185 195 Z"/>
+  <path fill="#ffffff" d="M 35 200 L 225 200 L 225 220 L 35 220 Z"/>
+</svg>

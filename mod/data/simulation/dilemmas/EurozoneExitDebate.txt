@@ -1,0 +1,14 @@
+[dilemma]
+name=EurozoneExitDebate
+
+[influences]
+0 = _default_,0.3+(0*x)
+1 = _random_,0,0.08
+2 = Stability,0.4-(0.6*x)
+3 = SovereignRisk,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(Stability,+0.03,6);CreateGrudge(SovereignRisk,-0.03,6);CreateGrudge(BusinessConfidence,+0.02,8)
+
+[option1]
+OnImplement = CreateGrudge(Stability,-0.04,4);CreateGrudge(SovereignRisk,+0.05,4);CreateGrudge(CurrencyStrength,-0.04,4);CreateGrudge(BusinessConfidence,-0.04,4)

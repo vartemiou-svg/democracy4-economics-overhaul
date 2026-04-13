@@ -1,0 +1,19 @@
+[dilemma]
+name = CurrencyCrisisResponse_Eurozone
+
+[influences]
+0 = _random_,0,0.08
+1 = SovereignRisk,0+(0.5*x)
+2 = MediumTermYield,0+(0.5*x)
+3 = DebtServiceRatio,0+(0.4*x)
+4 = BondMarketCrisis,0+(0.3*x)
+5 = _prereq_eurozone,-1.0+(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(GDP,-0.04,0.92f);CreateGrudge(Unemployment,0.05,0.93f);CreateGrudge(FiscalBalance,0.05,0.93f);CreateGrudge(SovereignRisk,-0.04,0.92f);CreateGrudge(_All_,-0.06,0.92f);CreateGrudge(Capitalist,0.03,0.89f);CreateGrudge(Patriot,-0.04,0.91f);CreateGrudge(Socialist,-0.06,0.92f);
+
+[option1]
+OnImplement = CreateGrudge(MediumTermYield,-0.06,0.91f);CreateGrudge(SovereignRisk,-0.05,0.92f);CreateGrudge(BusinessConfidence,0.02,0.89f);CreateGrudge(FiscalBalance,-0.02,0.90f);CreateGrudge(_All_,-0.03,0.90f);CreateGrudge(Patriot,-0.04,0.90f);CreateGrudge(GDP,0.02,0.89f);
+
+[option2]
+OnImplement = CreateGrudge(CurrencyStrength,-0.08,0.93f);CreateGrudge(Inflation,0.05,0.92f);CreateGrudge(SovereignRisk,0.08,0.94f);CreateGrudge(BusinessConfidence,-0.10,0.93f);CreateGrudge(GDP,-0.04,0.92f);CreateGrudge(Unemployment,0.03,0.91f);CreateGrudge(ForeignInvestment,-0.08,0.93f);CreateGrudge(Patriot,0.06,0.91f);CreateGrudge(Socialist,0.03,0.89f);

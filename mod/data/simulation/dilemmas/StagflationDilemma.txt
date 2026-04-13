@@ -1,0 +1,14 @@
+[dilemma]
+name=StagflationDilemma
+
+[influences]
+0 = _default_,0.15+(0*x)
+1 = _random_,0,0.08
+2 = Inflation,0+(0.5*x)
+3 = Unemployment,0+(0.4*x)
+
+[option0]
+OnImplement = CreateGrudge(Inflation,-0.04,6);CreateGrudge(ShortTermYield,+0.03,4);CreateGrudge(GDP,-0.03,8);CreateGrudge(Unemployment,+0.02,8)
+
+[option1]
+OnImplement = CreateGrudge(GDP,+0.04,6);CreateGrudge(Inflation,+0.03,6);CreateGrudge(_effectivedebt_,+0.02,6);CreateGrudge(Unemployment,-0.03,8)

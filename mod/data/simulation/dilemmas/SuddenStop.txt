@@ -1,0 +1,14 @@
+[dilemma]
+name=SuddenStop
+
+[influences]
+0 = _default_,0.10+(0*x)
+1 = _random_,0,0.08
+2 = ForeignInvestment,0.5-(0.8*x)
+3 = CurrencyStrength,0.3-(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(ShortTermYield,+0.06,4);CreateGrudge(CurrencyStrength,+0.03,6);CreateGrudge(GDP,-0.04,6);CreateGrudge(BusinessConfidence,-0.03,6)
+
+[option1]
+OnImplement = CreateGrudge(SovereignRisk,-0.02,8);CreateGrudge(ForeignInvestment,+0.02,8);CreateGrudge(_effectivedebt_,+0.02,6);CreateGrudge(GDP,+0.01,6)

@@ -1,0 +1,17 @@
+[dilemma]
+name = TechCompanyTaxHoliday
+
+[influences]
+0 = _random_,0,0.10
+1 = GDP,0.25-(0.35*x)
+2 = Unemployment,0+(0.3*x)
+3 = BusinessConfidence,0+(0.2*x)
+
+[option0]
+OnImplement = CreateGrudge(GDP,0.05,0.94f);CreateGrudge(FiscalBalance,-0.04,0.94f);CreateGrudge(Unemployment,-0.03,0.92f);CreateGrudge(BusinessConfidence,0.03,0.91f);CreateGrudge(ForeignInvestment,0.04,0.92f);CreateGrudge(Capitalist,0.06,0.91f);CreateGrudge(Socialist,-0.06,0.92f);CreateGrudge(SelfEmployed,-0.03,0.90f);
+
+[option1]
+OnImplement = CreateGrudge(FiscalBalance,0.01,0.88f);CreateGrudge(Socialist,0.03,0.87f);CreateGrudge(Capitalist,-0.03,0.89f);
+
+[option2]
+OnImplement = CreateGrudge(GDP,0.03,0.92f);CreateGrudge(FiscalBalance,-0.02,0.92f);CreateGrudge(Unemployment,-0.02,0.90f);CreateGrudge(Capitalist,0.03,0.89f);CreateGrudge(Socialist,-0.02,0.88f);

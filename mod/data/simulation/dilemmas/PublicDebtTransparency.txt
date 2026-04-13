@@ -1,0 +1,12 @@
+[dilemma]
+name=PublicDebtTransparency
+
+[influences]
+0 = _default_,0.40+(0*x)
+1 = _random_,0,0.15
+
+[option0]
+OnImplement = CreateGrudge(SovereignRisk,-0.02,8);CreateGrudge(Corruption,-0.02,12);CreateGrudge(BusinessConfidence,+0.02,8)
+
+[option1]
+OnImplement = CreateGrudge(Corruption,+0.01,12)

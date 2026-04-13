@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="220" height="180" viewBox="0 0 220 180" version="1.1"><defs><style>.cls-1 { fill-rule: evenodd; }</style></defs><path id="IconGraphic" class="cls-1" d="M20 150 Q60 148 90 130 Q120 112 150 80 Q170 58 200 35 L203 42 Q172 65 152 87 Q122 118 92 136 Q62 154 22 156 Z M20 160 L200 160 L200 165 L20 165 Z M20 30 L20 165 L15 165 L15 30 Z M190 25 L208 30 L195 45 Z" style="fill:#ffffff;fill-rule:evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+  </defs>
+  <path fill="#ffffff" d="M 35 40 Q 80 50 128 100 Q 176 150 220 180 L 230 180 Q 180 140 135 85 Q 85 30 40 30 Z"/>
+  <path fill="#ffffff" d="M 30 220 L 240 220 L 240 230 L 30 230 Z"/>
+  <path fill="#ffffff" d="M 25 30 L 35 30 L 35 230 L 25 230 Z"/>
+</svg>

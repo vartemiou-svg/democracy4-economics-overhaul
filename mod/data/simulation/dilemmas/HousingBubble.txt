@@ -1,0 +1,14 @@
+[dilemma]
+name=HousingBubble
+
+[influences]
+0 = _default_,0.30+(0*x)
+1 = _random_,0,0.12
+2 = ShortTermYield,0.4-(0.6*x)
+3 = GDP,0+(0.3*x)
+
+[option0]
+OnImplement = CreateGrudge(BusinessConfidence,-0.03,6);CreateGrudge(Stability,+0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(Stability,-0.03,6);CreateGrudge(BusinessConfidence,+0.03,8)

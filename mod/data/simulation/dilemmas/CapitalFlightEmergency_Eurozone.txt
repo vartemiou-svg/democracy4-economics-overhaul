@@ -1,0 +1,18 @@
+[dilemma]
+name = CapitalFlightEmergency_Eurozone
+
+[influences]
+0 = _random_,0,0.08
+1 = BondMarketCrisis,0+(0.5*x)
+2 = SovereignRisk,0+(0.5*x)
+3 = ForeignInvestment,0.3-(0.4*x)
+4 = _prereq_eurozone,-1.0+(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(ForeignInvestment,-0.10,0.94f);CreateGrudge(BusinessConfidence,-0.10,0.93f);CreateGrudge(Capitalist,-0.10,0.93f);CreateGrudge(SovereignRisk,0.06,0.94f);CreateGrudge(Liberal,-0.08,0.92f);CreateGrudge(GDP,-0.04,0.92f);CreateGrudge(Unemployment,0.03,0.91f);CreateGrudge(_All_,-0.04,0.91f);CreateGrudge(Patriot,0.04,0.89f);
+
+[option1]
+OnImplement = CreateGrudge(MediumTermYield,-0.04,0.90f);CreateGrudge(SovereignRisk,-0.03,0.91f);CreateGrudge(BusinessConfidence,0.02,0.89f);CreateGrudge(FiscalBalance,-0.02,0.90f);CreateGrudge(ForeignInvestment,0.02,0.89f);CreateGrudge(Patriot,-0.04,0.91f);CreateGrudge(GDP,0.02,0.89f);
+
+[option2]
+OnImplement = CreateGrudge(GDP,-0.03,0.92f);CreateGrudge(Unemployment,0.03,0.91f);CreateGrudge(SovereignRisk,-0.04,0.92f);CreateGrudge(FiscalBalance,0.04,0.92f);CreateGrudge(_All_,-0.04,0.91f);CreateGrudge(Socialist,-0.04,0.91f);CreateGrudge(Capitalist,0.02,0.89f);

@@ -1,0 +1,14 @@
+[dilemma]
+name=CapitalFlight
+
+[influences]
+0 = _default_,0.15+(0*x)
+1 = _random_,0,0.10
+2 = SovereignRisk,0+(0.6*x)
+3 = Stability,0.3-(0.6*x)
+
+[option0]
+OnImplement = CreateGrudge(ForeignInvestment,-0.06,6);CreateGrudge(CurrencyStrength,+0.04,8);CreateGrudge(BusinessConfidence,-0.05,6);CreateGrudge(SovereignRisk,-0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(SovereignRisk,-0.02,8);CreateGrudge(BusinessConfidence,+0.02,8);CreateGrudge(CurrencyStrength,-0.02,6)

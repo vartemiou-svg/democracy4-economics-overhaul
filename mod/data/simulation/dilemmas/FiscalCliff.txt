@@ -1,0 +1,13 @@
+[dilemma]
+name=FiscalCliff
+
+[influences]
+0 = _default_,0.20+(0*x)
+1 = _random_,0,0.12
+2 = FiscalBalance,0.5-(0.8*x)
+
+[option0]
+OnImplement = CreateGrudge(FiscalBalance,+0.06,4);CreateGrudge(GDP,-0.04,6);CreateGrudge(Unemployment,+0.03,6);CreateGrudge(SovereignRisk,-0.04,6)
+
+[option1]
+OnImplement = CreateGrudge(FiscalBalance,-0.02,4);CreateGrudge(BusinessConfidence,-0.02,6);CreateGrudge(GDP,+0.01,8)

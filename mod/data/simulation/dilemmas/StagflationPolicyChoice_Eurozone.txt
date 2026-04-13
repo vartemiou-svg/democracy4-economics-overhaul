@@ -1,0 +1,18 @@
+[dilemma]
+name = StagflationPolicyChoice_Eurozone
+
+[influences]
+0 = _random_,0,0.08
+1 = Stagflation,0+(0.7*x)
+2 = Inflation,0+(0.3*x)
+3 = Unemployment,0+(0.3*x)
+4 = _prereq_eurozone,-1.0+(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(ShortTermYield,0.04,0.91f);CreateGrudge(Inflation,-0.04,0.93f);CreateGrudge(GDP,-0.08,0.93f);CreateGrudge(Unemployment,0.06,0.93f);CreateGrudge(FiscalBalance,0.04,0.92f);CreateGrudge(SovereignRisk,-0.03,0.91f);CreateGrudge(Poor,-0.06,0.92f);CreateGrudge(Capitalist,0.03,0.89f);CreateGrudge(_All_,-0.04,0.91f);CreateGrudge(Patriot,-0.03,0.90f);CreateGrudge(Socialist,-0.04,0.91f);
+
+[option1]
+OnImplement = CreateGrudge(GDP,0.05,0.91f);CreateGrudge(Inflation,0.06,0.93f);CreateGrudge(Unemployment,-0.04,0.90f);CreateGrudge(FiscalBalance,-0.06,0.93f);CreateGrudge(SovereignRisk,0.05,0.93f);CreateGrudge(Poor,0.04,0.89f);CreateGrudge(Capitalist,-0.04,0.91f);CreateGrudge(Patriot,0.03,0.89f);CreateGrudge(Socialist,0.05,0.90f);CreateGrudge(_All_,0.03,0.89f);
+
+[option2]
+OnImplement = CreateGrudge(Inflation,-0.04,0.90f);CreateGrudge(GDP,-0.05,0.91f);CreateGrudge(BusinessConfidence,-0.08,0.92f);CreateGrudge(Capitalist,-0.10,0.93f);CreateGrudge(Liberal,-0.06,0.91f);CreateGrudge(_All_,0.02,0.86f);

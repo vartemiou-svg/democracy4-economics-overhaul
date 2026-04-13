@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="220" height="200" viewBox="0 0 220 200" version="1.1"><defs><style>.cls-1 { fill-rule: evenodd; }</style></defs><path id="IconGraphic" class="cls-1" d="M106 15 L114 15 L114 170 L106 170 Z M80 170 L140 170 L140 180 L80 180 Z M70 175 L150 175 L150 185 L70 185 Z M25 45 L110 25 L110 35 L25 55 Z M110 25 L195 45 L195 55 L110 35 Z M10 55 L40 55 L50 105 L0 105 Z M15 60 L5 100 L45 100 L35 60 Z M170 55 L200 55 L210 105 L160 105 Z M175 60 L165 100 L205 100 L195 60 Z" style="fill:#ffffff;fill-rule:evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+  </defs>
+  <path fill="#ffffff" d="M 125 30 L 135 30 L 135 220 L 125 220 Z"/>
+  <path fill="#ffffff" d="M 60 85 L 200 85 L 200 95 L 60 95 Z"/>
+  <path fill="#ffffff" d="M 40 90 L 60 85 L 60 100 Z"/>
+  <path fill="#ffffff" d="M 220 90 L 200 85 L 200 100 Z"/>
+  <path fill="#ffffff" d="M 90 225 L 170 225 L 170 235 L 90 235 Z"/>
+</svg>

@@ -1,0 +1,18 @@
+[dilemma]
+name = BankingCrisisContagion_Eurozone
+
+[influences]
+0 = _random_,0,0.10
+1 = MediumTermYield,0+(0.5*x)
+2 = SovereignRisk,0+(0.35*x)
+3 = Stability,0.25-(0.35*x)
+4 = _prereq_eurozone,-1.0+(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(_effectivedebt_,0.05,0.94f);CreateGrudge(DebtServiceRatio,0.03,0.93f);CreateGrudge(SovereignRisk,-0.03,0.92f);CreateGrudge(BusinessConfidence,0.02,0.90f);CreateGrudge(GDP,+0.02,0.91f);CreateGrudge(FiscalBalance,-0.03,0.92f);CreateGrudge(Capitalist,0.03,0.90f);CreateGrudge(Socialist,-0.06,0.91f);CreateGrudge(_All_,-0.05,0.91f);CreateGrudge(Patriot,-0.04,0.90f);
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,-0.12,0.93f);CreateGrudge(GDP,-0.08,0.92f);CreateGrudge(Capitalist,-0.12,0.93f);CreateGrudge(_All_,-0.05,0.91f);CreateGrudge(Wealthy,-0.10,0.93f);CreateGrudge(SovereignRisk,0.05,0.93f);
+
+[option2]
+OnImplement = CreateGrudge(_effectivedebt_,0.06,0.93f);CreateGrudge(BusinessConfidence,-0.04,0.90f);CreateGrudge(Capitalist,-0.10,0.93f);CreateGrudge(Socialist,0.08,0.92f);CreateGrudge(GDP,-0.04,0.91f);CreateGrudge(StateEmployees,0.04,0.88f);CreateGrudge(Patriot,0.03,0.88f);

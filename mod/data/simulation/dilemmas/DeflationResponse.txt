@@ -1,0 +1,13 @@
+[dilemma]
+name=DeflationResponse
+
+[influences]
+0 = _default_,0.20+(0*x)
+1 = _random_,0,0.10
+2 = Inflation,0-(0.8*x)
+
+[option0]
+OnImplement = CreateGrudge(GDP,+0.04,6);CreateGrudge(_effectivedebt_,+0.03,4);CreateGrudge(Inflation,+0.03,8);CreateGrudge(BusinessConfidence,+0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(MoneySupply,+0.06,4);CreateGrudge(Inflation,+0.04,8);CreateGrudge(CurrencyStrength,-0.03,6)

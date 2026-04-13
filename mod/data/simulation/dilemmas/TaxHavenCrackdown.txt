@@ -1,0 +1,12 @@
+[dilemma]
+name=TaxHavenCrackdown
+
+[influences]
+0 = _default_,0.40+(0*x)
+1 = _random_,0,0.15
+
+[option0]
+OnImplement = CreateGrudge(FiscalBalance,+0.03,8);CreateGrudge(ForeignInvestment,-0.02,8);CreateGrudge(Corruption,-0.02,12)
+
+[option1]
+OnImplement = CreateGrudge(ForeignInvestment,+0.02,8);CreateGrudge(Corruption,+0.01,12)

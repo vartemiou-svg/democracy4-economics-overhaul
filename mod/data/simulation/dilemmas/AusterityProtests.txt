@@ -1,0 +1,14 @@
+[dilemma]
+name=AusterityProtests
+
+[influences]
+0 = _default_,0.25+(0*x)
+1 = _random_,0,0.10
+2 = Stability,0.4-(0.6*x)
+3 = Unemployment,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(Stability,+0.04,4);CreateGrudge(FiscalBalance,-0.04,4);CreateGrudge(_effectivedebt_,+0.02,6);CreateGrudge(SovereignRisk,+0.02,6)
+
+[option1]
+OnImplement = CreateGrudge(Stability,-0.03,4);CreateGrudge(FiscalBalance,+0.02,6);CreateGrudge(SovereignRisk,-0.02,6)

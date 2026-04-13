@@ -1,0 +1,11 @@
+[dilemma]
+name=GreenBondInitiative
+
+[influences]
+0 = _default_,0.40+(0*x)
+1 = _random_,0,0.15
+
+[option0]
+OnImplement = CreateGrudge(ForeignInvestment,+0.03,8);CreateGrudge(_effectivedebt_,+0.02,6);CreateGrudge(BusinessConfidence,+0.02,8)
+
+[option1]

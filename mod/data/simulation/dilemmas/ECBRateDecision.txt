@@ -1,0 +1,13 @@
+[dilemma]
+name=ECBRateDecision
+
+[influences]
+0 = _default_,0.4+(0*x)
+1 = _random_,0,0.15
+2 = Inflation,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(ShortTermYield,-0.02,6);CreateGrudge(Inflation,+0.01,8);CreateGrudge(GDP,+0.01,12)
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,+0.01,8)

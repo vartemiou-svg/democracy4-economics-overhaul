@@ -1,0 +1,13 @@
+[dilemma]
+name = YieldCurveInversionResponse
+
+[influences]
+0 = _random_,0,0.10
+1 = YieldCurveSlope,0.5-(0.6*x)
+2 = YieldCurveInversion,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(BusinessConfidence,-0.06,0.90f);CreateGrudge(_All_,-0.04,0.88f);CreateGrudge(SovereignRisk,-0.02,0.90f);CreateGrudge(Capitalist,-0.03,0.88f);
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,0.02,0.86f);CreateGrudge(_All_,0.02,0.86f);CreateGrudge(SovereignRisk,0.03,0.92f);

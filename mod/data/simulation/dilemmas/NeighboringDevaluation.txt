@@ -1,0 +1,17 @@
+[dilemma]
+name = NeighboringDevaluation
+
+[influences]
+0 = _random_,0,0.12
+1 = _globaleconomy_,0.3-(0.4*x)
+2 = GDP,0.15-(0.2*x)
+3 = _prereq_eurozone,0-(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(CurrencyStrength,-0.06,0.91f);CreateGrudge(GDP,0.03,0.90f);CreateGrudge(Inflation,0.04,0.91f);CreateGrudge(Capitalist,0.02,0.88f);CreateGrudge(SovereignRisk,0.02,0.90f);
+
+[option1]
+OnImplement = CreateGrudge(GDP,-0.03,0.91f);CreateGrudge(CurrencyStrength,0.02,0.89f);CreateGrudge(Unemployment,0.02,0.90f);CreateGrudge(SovereignRisk,-0.01,0.88f);CreateGrudge(Capitalist,-0.02,0.88f);
+
+[option2]
+OnImplement = CreateGrudge(GDP,-0.02,0.89f);CreateGrudge(Inflation,0.02,0.89f);CreateGrudge(ForeignInvestment,-0.04,0.91f);CreateGrudge(SovereignRisk,0.01,0.89f);CreateGrudge(Capitalist,-0.03,0.89f);

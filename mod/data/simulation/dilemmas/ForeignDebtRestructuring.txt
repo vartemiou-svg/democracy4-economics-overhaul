@@ -1,0 +1,14 @@
+[dilemma]
+name=ForeignDebtRestructuring
+
+[influences]
+0 = _default_,0.10+(0*x)
+1 = _random_,0,0.08
+2 = _effectivedebt_,0+(0.6*x)
+3 = CurrencyStrength,0.3-(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(SovereignRisk,-0.04,6);CreateGrudge(_effectivedebt_,-0.04,6);CreateGrudge(ForeignInvestment,-0.04,8)
+
+[option1]
+OnImplement = CreateGrudge(_effectivedebt_,-0.02,4);CreateGrudge(ForeignInvestment,+0.02,8);CreateGrudge(FiscalBalance,-0.05,4)

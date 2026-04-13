@@ -1,0 +1,14 @@
+[dilemma]
+name=BondAuctionFailure
+
+[influences]
+0 = _default_,0.10+(0*x)
+1 = _random_,0,0.12
+2 = SovereignRisk,0+(0.8*x)
+3 = _effectivedebt_,0+(0.5*x)
+
+[option0]
+OnImplement = CreateGrudge(MoneySupply,+0.08,8);CreateGrudge(Inflation,+0.03,12);CreateGrudge(SovereignRisk,-0.06,6);CreateGrudge(BusinessConfidence,+0.02,8);CreateGrudge(GDP,+0.01,4)
+
+[option1]
+OnImplement = CreateGrudge(GDP,-0.04,8);CreateGrudge(Unemployment,+0.03,8);CreateGrudge(SovereignRisk,-0.08,8);CreateGrudge(FiscalBalance,+0.06,6)

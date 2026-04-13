@@ -1,0 +1,14 @@
+[dilemma]
+name=SovereignDowngrade
+
+[influences]
+0 = _default_,0.12+(0*x)
+1 = _random_,0,0.10
+2 = SovereignRisk,0+(0.6*x)
+3 = FiscalBalance,0.4-(0.8*x)
+
+[option0]
+OnImplement = CreateGrudge(SovereignRisk,-0.05,6);CreateGrudge(FiscalBalance,+0.04,6);CreateGrudge(GDP,-0.03,8);CreateGrudge(Unemployment,+0.02,8)
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,-0.02,6);CreateGrudge(SovereignRisk,+0.02,4);CreateGrudge(GDP,+0.01,8)

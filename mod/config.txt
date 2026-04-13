@@ -1,6 +1,6 @@
 [config]
 name = economics_overhaul
-path = C:\Users\varte\OneDrive\Documents\My Games\democracy4\mods\economics_overhaul
+path = economics_overhaul
 guiname = Realistic Economics Overhaul
-author = Anonymous
-description = Adds a realistic yield curve across the entire term structure (2Y/10Y/30Y), nominal and PPP-adjusted GDP, sovereign risk mechanics, debt service ratios, central bank rate policy, QE, fiscal rules, and new economic situations including yield curve inversion, stagflation, deflation, and bond market crises. Rewires existing debt and inflation mechanics for greater realism.
+author = Vasilios
+description = Adds realistic macroeconomic simulation: yield curves, sovereign risk, fiscal balance, monetary policy tools, and economic crises. 13 new simulation values, 3 policies, 4 crisis situations, 53 dilemmas, and per-country credit profiles for 140 countries in 7 tiers.

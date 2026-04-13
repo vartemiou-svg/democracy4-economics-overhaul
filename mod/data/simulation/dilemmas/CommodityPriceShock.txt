@@ -1,0 +1,13 @@
+[dilemma]
+name=CommodityPriceShock
+
+[influences]
+0 = _default_,0.30+(0*x)
+1 = _random_,0,0.10
+2 = EnergyPrice,0+(0.6*x)
+
+[option0]
+OnImplement = CreateGrudge(Inflation,-0.03,4);CreateGrudge(BusinessConfidence,-0.04,6);CreateGrudge(FiscalBalance,-0.03,6)
+
+[option1]
+OnImplement = CreateGrudge(Inflation,+0.02,4);CreateGrudge(BusinessConfidence,-0.03,8)

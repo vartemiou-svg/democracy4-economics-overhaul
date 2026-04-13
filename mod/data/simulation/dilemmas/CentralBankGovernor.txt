@@ -1,0 +1,12 @@
+[dilemma]
+name=CentralBankGovernor
+
+[influences]
+0 = _default_,0.50+(0*x)
+1 = _random_,0,0.15
+
+[option0]
+OnImplement = CreateGrudge(Inflation,-0.04,8);CreateGrudge(ShortTermYield,+0.03,6);CreateGrudge(BusinessConfidence,+0.03,8)
+
+[option1]
+OnImplement = CreateGrudge(Inflation,+0.03,8);CreateGrudge(ShortTermYield,-0.04,6);CreateGrudge(GDP,+0.03,8);CreateGrudge(Unemployment,-0.02,12)

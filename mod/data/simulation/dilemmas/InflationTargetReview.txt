@@ -1,0 +1,13 @@
+[dilemma]
+name=InflationTargetReview
+
+[influences]
+0 = _default_,0.45+(0*x)
+1 = _random_,0,0.15
+2 = Inflation,0+(0.4*x)
+
+[option0]
+OnImplement = CreateGrudge(Inflation,+0.02,8);CreateGrudge(GDP,+0.02,12);CreateGrudge(BusinessConfidence,-0.02,8)
+
+[option1]
+OnImplement = CreateGrudge(BusinessConfidence,+0.01,8)

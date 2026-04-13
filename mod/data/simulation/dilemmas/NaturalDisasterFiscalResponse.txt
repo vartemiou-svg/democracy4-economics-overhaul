@@ -1,0 +1,12 @@
+[dilemma]
+name=NaturalDisasterFiscalResponse
+
+[influences]
+0 = _default_,0.15+(0*x)
+1 = _random_,0,0.06
+
+[option0]
+OnImplement = CreateGrudge(GDP,+0.03,8);CreateGrudge(_effectivedebt_,+0.05,4);CreateGrudge(Stability,+0.04,6);CreateGrudge(FiscalBalance,-0.06,4)
+
+[option1]
+OnImplement = CreateGrudge(Stability,-0.02,6);CreateGrudge(_effectivedebt_,+0.02,6);CreateGrudge(BusinessConfidence,-0.02,8)

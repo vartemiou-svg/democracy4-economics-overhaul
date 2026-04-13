@@ -1,0 +1,18 @@
+[dilemma]
+name = DeflationEmergencyResponse_Sovereign
+
+[influences]
+0 = _random_,0,0.08
+1 = Deflation,0+(0.7*x)
+2 = Inflation,0.4-(0.6*x)
+3 = GDP,0.3-(0.4*x)
+4 = _prereq_eurozone,0-(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(MoneySupply,0.12,0.93f);CreateGrudge(Inflation,0.08,0.92f);CreateGrudge(GDP,0.04,0.90f);CreateGrudge(CurrencyStrength,-0.08,0.92f);CreateGrudge(Poor,0.06,0.88f);CreateGrudge(_All_,0.04,0.88f);CreateGrudge(Capitalist,-0.06,0.91f);
+
+[option1]
+OnImplement = CreateGrudge(MoneySupply,0.06,0.92f);CreateGrudge(LongTermYield,-0.05,0.91f);CreateGrudge(Inflation,0.03,0.91f);CreateGrudge(CurrencyStrength,-0.04,0.91f);CreateGrudge(Capitalist,0.02,0.88f);
+
+[option2]
+OnImplement = CreateGrudge(GDP,-0.05,0.93f);CreateGrudge(Unemployment,0.04,0.93f);CreateGrudge(BusinessConfidence,-0.04,0.92f);CreateGrudge(Capitalist,0.03,0.88f);

@@ -1,0 +1,18 @@
+[dilemma]
+name = InflationRiots
+
+[influences]
+0 = _random_,0,0.10
+1 = Inflation,0+(0.6*x)
+2 = MoneySupply,0+(0.25*x)
+3 = Poor,-0.2+(0.35*x)
+4 = FoodPrice,0+(0.3*x)
+
+[option0]
+OnImplement = CreateGrudge(Inflation,-0.06,0.90f);CreateGrudge(BusinessConfidence,-0.08,0.92f);CreateGrudge(Capitalist,-0.10,0.92f);CreateGrudge(GDP,-0.04,0.91f);CreateGrudge(Poor,0.04,0.88f);CreateGrudge(Stability,0.03,0.88f);
+
+[option1]
+OnImplement = CreateGrudge(ShortTermYield,0.10,0.92f);CreateGrudge(Inflation,-0.04,0.93f);CreateGrudge(GDP,-0.06,0.92f);CreateGrudge(Unemployment,0.04,0.92f);CreateGrudge(Capitalist,0.03,0.88f);CreateGrudge(BusinessConfidence,-0.03,0.90f);
+
+[option2]
+OnImplement = CreateGrudge(_effectivedebt_,0.03,0.92f);CreateGrudge(Poor,0.06,0.90f);CreateGrudge(FiscalBalance,-0.04,0.91f);CreateGrudge(Socialist,0.04,0.88f);CreateGrudge(Capitalist,-0.03,0.88f);CreateGrudge(Stability,0.02,0.88f);CreateGrudge(GDP,0.02,0.90f);

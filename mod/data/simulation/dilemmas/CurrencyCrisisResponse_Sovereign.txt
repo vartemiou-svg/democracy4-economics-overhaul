@@ -1,0 +1,19 @@
+[dilemma]
+name = CurrencyCrisisResponse_Sovereign
+
+[influences]
+0 = _random_,0,0.08
+1 = SovereignRisk,0+(0.5*x)
+2 = CurrencyStrength,0.35-(0.5*x)
+3 = MoneySupply,0+(0.3*x)
+4 = BondMarketCrisis,0+(0.3*x)
+5 = _prereq_eurozone,0-(1.0*x)
+
+[option0]
+OnImplement = CreateGrudge(ShortTermYield,0.12,0.91f);CreateGrudge(CurrencyStrength,0.06,0.90f);CreateGrudge(GDP,-0.08,0.92f);CreateGrudge(Unemployment,0.05,0.92f);CreateGrudge(BusinessConfidence,-0.05,0.91f);
+
+[option1]
+OnImplement = CreateGrudge(CurrencyStrength,-0.08,0.93f);CreateGrudge(Inflation,0.06,0.92f);CreateGrudge(GDP,0.03,0.90f);CreateGrudge(ForeignInvestment,-0.04,0.90f);CreateGrudge(Poor,-0.05,0.91f);
+
+[option2]
+OnImplement = CreateGrudge(CurrencyStrength,-0.12,0.92f);CreateGrudge(Inflation,0.08,0.93f);CreateGrudge(BusinessConfidence,-0.06,0.91f);CreateGrudge(SovereignRisk,0.04,0.92f);CreateGrudge(Capitalist,-0.04,0.89f);

@@ -1,0 +1,14 @@
+[dilemma]
+name = DeclareDebtRiskFree
+
+[influences]
+0 = _random_,0,0.08
+1 = SovereignRisk,0+(0.4*x)
+2 = _effectivedebt_,0+(0.3*x)
+3 = Stability,0.15-(0.2*x)
+
+[option0]
+OnImplement = CreateGrudge(SovereignRisk,0.10,0.94f);CreateGrudge(MediumTermYield,0.08,0.93f);CreateGrudge(CurrencyStrength,-0.06,0.92f);CreateGrudge(ForeignInvestment,-0.08,0.93f);CreateGrudge(_All_,0.04,0.88f);CreateGrudge(Capitalist,-0.10,0.93f);
+
+[option1]
+OnImplement = CreateGrudge(SovereignRisk,-0.03,0.90f);CreateGrudge(BusinessConfidence,0.02,0.88f);CreateGrudge(Capitalist,0.04,0.88f);CreateGrudge(_All_,-0.02,0.86f);

@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" version="1.1"><defs><style>.cls-1 { fill-rule: evenodd; }</style></defs><path id="IconGraphic" class="cls-1" d="M15 185 L15 120 L45 120 L45 185 Z M55 185 L55 90 L85 90 L85 185 Z M95 185 L95 55 L125 55 L125 185 Z M135 185 L135 25 L165 25 L165 185 Z M15 190 L185 190 L185 195 L15 195 Z M172 100 L172 65 Q185 65 185 78 L178 78 Q178 73 175 73 Q172 73 172 78 Q172 82 185 88 Q198 94 198 105 Q198 118 185 118 L185 130 L180 130 L180 118 Q168 118 168 105 L175 105 Q175 110 178 110 Q182 110 182 105 Q182 100 172 96 Z" style="fill:#ffffff;fill-rule:evenodd"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+  </defs>
+  <path fill="#ffffff" d="M 60 160 L 60 220 L 100 220 L 100 160 Z"/>
+  <path fill="#ffffff" d="M 118 110 L 118 220 L 158 220 L 158 110 Z"/>
+  <path fill="#ffffff" d="M 176 50 L 176 220 L 216 220 L 216 50 Z"/>
+  <path fill="#ffffff" d="M 40 225 L 220 225 L 220 235 L 40 235 Z"/>
+</svg>
